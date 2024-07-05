@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap");
+
+.header {
+  position: relative;
+  height: 30em;
+  border-bottom-left-radius: 20% 20%;
+  border-bottom-right-radius: 20% 20%;
+  background: #5bccf6;
+  box-shadow: 0 2px 6px rgba(3, 14, 18, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 0;
+}
+.h1 {
+  font-family: "Finger Paint", cursive;
+  margin: 0;
+  padding: 10px 0 40px 0;
+  font-size: 8em;
+  text-align: center;
+  color: #030e12;
+}
+
+.p {
+  align-self: center;
+  width: 60%;
+  font-family: "Finger Paint", cursive;
+  font-size: 1em;
+  text-align: center;
+  color: #030e12;
+}
+
+.profile_png {
+  position: absolute;
+  top: 0;
+  left: 75%;
+}
+.profile_png2 {
+  border-radius: 10%;
+  top: 75%;
+  left: 20%;
+  position: absolute;
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .options:hover {
+    filter: drop-shadow(2px 3px 3px rgba(3, 14, 18, 0.5));
+    -webkit-filter: drop-shadow(2px 3px 3px rgba(3, 14, 18, 0.5));
+    -moz-filter: drop-shadow(2px 3px 3px rgba(3, 14, 18, 0.5));
+  }
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 4.5em;
+  }
+
+  .p {
+    font-size: 0.75em;
+    width: 75%;
+    margin-bottom: 5em;
+  }
+  .profile .profile_png {
+    display: none;
+  }
+  .profile_png2 {
+    display: block;
+  }
+}
